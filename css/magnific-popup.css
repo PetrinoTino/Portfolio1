@@ -348,7 +348,22 @@ img.mfp-img {
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
-    padding-right: 6px; } }
+    padding-right: 6px; } 
+
+}
+@media only screen and (max-width: 668px){
+  .hi{
+   width: 200%;
+    font-size: 45px;
+   
+     }
+.hy{ 
+     font-size: 32px;
+     width: 200%;
+
+   }
+
+}
 
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {

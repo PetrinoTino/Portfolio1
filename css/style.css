@@ -1246,7 +1246,7 @@ a.brand:focus{
 }
 
 .display-2{
-  font-size: 6.54rem;
+  font-size: 5.54rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.05em;
@@ -1414,6 +1414,7 @@ a.brand:focus{
   .experience-info{
     margin-top:-1px;
   }
+
 }
 
 .experience-info div{
@@ -2031,6 +2032,8 @@ a.brand:focus{
 
 
 
+
+ 
 @media (min-width: 992px){
 
   html{
@@ -2044,7 +2047,6 @@ a.brand:focus{
 
 
   /* Sidebar Menu */
-
 
 
   .menu{
@@ -2070,11 +2072,11 @@ a.brand:focus{
   .left-boxed{
     left: 4.2857rem;
   }
+
 }
 
 
 /* 5.4 Min Height 500px */
-
 
 
 @media (min-height: 500px){
