@@ -21,6 +21,7 @@
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="css/magnific-popup.css">
 <link rel="stylesheet" href="css/">
+<link rel="stylesheet" href="process_form.php">
 <style>
   .overlay {
     position: absolute;
@@ -28,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Ndryshoni vlerën e 0.5 për të ndryshuar transparencën */
+    background-color: rgba(0, 0, 0, 0.3); /* Ndryshoni vlerën e 0.5 për të ndryshuar transparencën */
     pointer-events: none; /* Lejon klikimin nëpër overlay */
 }
 .overlay1 {
@@ -109,9 +110,9 @@
       </button>
       
       <div class="contacts d-none d-md-block">
-        <div class="contact-item">
+        <div class="contact-item"><a href="tel:+355694537908">
          +355694537908
-        </div>
+        </div></a>
         <div class="contact-item spacer">
           /
         </div>
@@ -131,8 +132,10 @@
     <div class="pagepiling">
       <div data-anchor="page1" class="pp-scrollable text-white section section-1">
         <div class="scroll-wrap">
-          <div class="section-bg" style="background-image:url(11.jpg);"></div>
+      
+          <div class="section-bg" style="background-image:url(./images/h1.jpg);"></div>
           <div class="overlay"></div> 
+
 
           <div class="scrollable-content">
             <div class="vertical-centred">
@@ -148,7 +151,7 @@
                              <br>Petrino Qasolli</span> 
                              <span class="text-primary "style="font-size: 45px;" ><br>
                               <span class="hy" >Front-End Developer</span></span></h1>
-                          <a class="popup-cv"  href="Resume.pdf" download=""><span class="icon ion-ios-briefcase"></span>CV </a>
+                          <a class="popup-cv"  href="CV Work.pdf" download=""><span class="icon ion-ios-briefcase"></span>CV </a>
                         </div>
                       </div>
                     </div>
@@ -197,7 +200,7 @@
                         </div>
                       </div>
                       <div class="view-all">
-                        <a href="Resume.pdf" download="">
+                        <a href="CV Work.pdf" download="">
                           Download resume
                         </a>
                       </div>
@@ -442,13 +445,13 @@
       <div data-anchor="page6" class="pp-scrollable section section-6">
         <div class="scroll-wrap">
           <div class="scrollable-content">
-            <div class="vertical-title text-white d-none d-lg-block"><span>partners</span></div>
+            <div class="vertical-title text-white d-none d-lg-block"><span>Coding</span></div>
             <div class="vertical-centred">
               <div class="boxed boxed-inner">
                 <div class="boxed">
                   <div class="container">
                     <div class="intro">
-                       <h2 class="title text-white"><span class="text-primary">Trusted</span> from Clients</h2>
+                       <h2 class="title text-white"><span class="text-primary">Web Developer</span> Coding</h2>
                       <div class="row row-partners">
                         <div class="col-sm-6 col-md-4 col-xl-3 col-partner">
                           <div class="partner-inner"><img alt="" src="HTML2.png"></div>
@@ -620,34 +623,35 @@
                           <h5 class="text-muted">Rruga Ilo Mitke Qafzezi</h5>
                           <section class="contact-address">
                             <h3><a class="mail" href="mailto:petrinotino@gmail.com"> petrinotino@gmail.com</a></h3>
-                            <h3><span class="phone">+355694537908</span></h3>
+                            <h3><a href="tel:+355694537908" class="phone">+355 69 453 7908</a></h3>
                           </section>
                         </div>
                         <div class="col-md-6">
                           <div class="contact-info">
-                            <form class="js-form" novalidate="novalidate">
-                              <div class="row">
-                                <div class="form-group col-sm-6">
-                                  <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
-                                </div>
-                                <div class="form-group col-sm-6">
-                                  <input type="email" required="" name="email" placeholder="Email*">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <input type="text" name="subject" placeholder="Subject (Optinal)">
-                                </div>
-                                <div class="form-group col-sm-12">
-                                  <textarea name="message" required="" placeholder="Message*"></textarea>
-                                </div>
-                                <div class="form-group form-group-message col-sm-12">
-                                  <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
-                                  <span id="error" class="text-primary">Sorry, something went wrong </span>
-                                </div>
-                                <div class="col-sm-12"><button type="submit" class="btn">Contact me</button></div>
-                              </div>
-                            </form>
+                              <form class="js-form" action="process_form.php" method="POST" novalidate="novalidate">
+                                  <div class="row">
+                                      <div class="form-group col-sm-6">
+                                          <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
+                                      </div>
+                                      <div class="form-group col-sm-6">
+                                          <input type="email" required="" name="email" placeholder="Email*">
+                                      </div>
+                                      <div class="form-group col-sm-12">
+                                          <input type="text" name="subject" placeholder="Subject (Optional)">
+                                      </div>
+                                      <div class="form-group col-sm-12">
+                                          <textarea name="message" required="" placeholder="Message*"></textarea>
+                                      </div>
+                                      <div class="form-group form-group-message col-sm-12">
+                                          <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
+                                          <span id="error" class="text-primary">Sorry, something went wrong </span>
+                                      </div>
+                                      <div class="col-sm-12"><button type="submit" class="btn">Contact me</button></div>
+                                  </div>
+                              </form>
                           </div>
-                        </div>
+                      </div>
+                      
                       </div>
                     </div>
                   </div>
