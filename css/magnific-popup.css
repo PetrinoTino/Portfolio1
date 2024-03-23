@@ -362,7 +362,7 @@ img.mfp-img {
      width: 200%;
 
    }
-   .section-bg {
+  .aa {
     background-size: cover; /* Mbulesa e plotë e përmbajtjes */
     background-position: top left;/* Vendosja e përmbajtjes në qendër */
     height: 100vh; /* Lartësia e div-it është 100% e lartësisë së ekranit */
