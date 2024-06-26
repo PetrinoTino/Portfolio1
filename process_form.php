@@ -7,13 +7,16 @@
 </head>
 <body>
     <?php
+    
 $name = $_POST["name"];
 $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
+
 $EmailTo = "petrinotino@gmail.com";
 $Title = "New Message Received";
+
 
 // prepare email body text
 $Fields = "Name: " . $name . "\n";
