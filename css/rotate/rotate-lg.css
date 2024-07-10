@@ -10,13 +10,9 @@
     opacity: 1;
   }
 }
-
-
 .rotate-in-lg {
   animation-name: rotate-in-lg;
 }
-
-
 @keyframes rotate-out-lg {
   0% {
     transform: rotate(0);

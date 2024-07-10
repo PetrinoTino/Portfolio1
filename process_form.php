@@ -12,7 +12,6 @@ $email = $_POST["email"];
 $subject = $_POST["subject"];
 $message = $_POST["message"];
 
-
 $EmailTo = "petrinotino@gmail.com";
 $Title = "New Message Received";
 
@@ -31,6 +30,7 @@ if ($success) {
 } else {
     echo "An error occurred while sending the message.";
 }
+
 ?>
 </body>
 </html>
